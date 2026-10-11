@@ -40,6 +40,22 @@ system's own libc.
 
 </td>
 </tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### [dunit-tcc](https://github.com/DunitOS/dunit-tcc)
+
+A fork of [TinyCC](https://repo.or.cz/tinycc.git) being **ported onto Dunit's
+native ABI** as an **on-device C compiler**: compile C to a native static
+binary directly on Dunit — built-in assembler and linker, one process.
+
+`C` · `compiler` · `tcc` · `on-device`
+
+</td>
+<td width="50%" valign="top">
+</td>
+</tr>
 </table>
 
 ---
