@@ -30,7 +30,7 @@ compositor/DWM and apps, DunitFS, and the `tools/qemu_test.py` test harness.
 </td>
 <td width="50%" valign="top">
 
-### [dunit-musl](https://github.com/coreformdev/dunit-musl)
+### [dunit-musl](https://github.com/DunitOS/dunit-musl)
 
 A fork of [musl](https://musl.libc.org/) being **ported onto Dunit's native
 syscall ABI** (not Linux compat), so static C programs build against the
