@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dunit-os/dunit-os/main/assets/images/image.png" width="900" alt="Dunit OS"/>
+  <img src="https://raw.githubusercontent.com/DunitOS/dunit-os/main/assets/images/image.png" width="820" alt="Dunit OS"/>
 </p>
 
 <h1 align="center">Dunit OS</h1>
@@ -13,6 +13,35 @@
   <code>kernel = mechanism</code> · <code>userspace = policy</code> · <code>config drives the desktop</code>
 </p>
 
+## 📌 Repositories
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [dunit-os](https://github.com/DunitOS/dunit-os)
+
+The OS monorepo — the **Green Tea** kernel (Rust `no_std`), the C/NASM HAL,
+Limine BIOS/UEFI boot, the userspace ABI + `libdunit`, the Stack B
+compositor/DWM and apps, DunitFS, and the `tools/qemu_test.py` test harness.
+
+`Rust` · `no_std` · `x86_64` · `Limine`
+
+</td>
+<td width="50%" valign="top">
+
+### [dunit-musl](https://github.com/coreformdev/dunit-musl)
+
+A fork of [musl](https://musl.libc.org/) being **ported onto Dunit's native
+syscall ABI** (not Linux compat), so static C programs build against the
+system's own libc.
+
+`C` · `libc` · `static` · `port`
+
+</td>
+</tr>
+</table>
+
 ---
 
 Processes are independent ring-3 ELF binaries; the compositor/DWM and every app
@@ -20,16 +49,6 @@ live in userspace; **configuration — not Rust code — drives the desktop**. P
 and musl are treated as a *source-portability layer*, not a Linux-compatibility
 goal: the kernel speaks its own native syscall ABI, and everything above it is
 replaceable policy.
-
-### Repositories
-
-- **[dunit-os](https://github.com/Dunit-os/dunit-os)** — the OS monorepo: the
-  **Green Tea** kernel (Rust `no_std`), the C/NASM HAL, Limine BIOS/UEFI boot,
-  the userspace ABI + `libdunit`, the Stack B compositor/DWM and apps, DunitFS,
-  and the `tools/qemu_test.py` test harness.
-- **[dunit-musl](https://github.com/coreformdev/dunit-musl)** — a fork of
-  [musl](https://musl.libc.org/) being *ported onto Dunit's native syscall ABI*
-  (not Linux compat), so static C programs build against the system's own libc.
 
 ### Highlights
 
